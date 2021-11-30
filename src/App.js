@@ -11,8 +11,8 @@ function App() {
   const {newCatchphrase, setNewCatchphrase} = useState('');
   const {catchphrases, setCatchphrases} = useState([]);
 
-  const hadleClick = () => {
-
+  const handleClick = () => {
+    setCatchphrases((prevState) => [...prevState, newCatchphrase])
   };
 
   return (
@@ -21,9 +21,21 @@ function App() {
         <h1>Character Building Macho Machine</h1>
       </header>
       
-      <Character head={head}/>
+      <Character 
+      head={head} 
+      middle={middle} 
+      pants={pants}/>
+
       <Display />
-      <Picker />
+      
+      <Picker 
+      head={head} 
+      onHeadChange={setHead} 
+      middle={middle} 
+      onMiddleChange={setMiddle} 
+      newCatchphrase={newCatchphrase} 
+      setCatchphrase={setNewCatchphrase} 
+      handleClick={handleClick} />
 
         
     </div>

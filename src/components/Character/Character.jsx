@@ -13,6 +13,28 @@ export const Character = ({head, middle, pants}) => {
                 backgroundRepeat: 'no-repeat',
             }}
             ></article>
+
+            <article 
+            className='middle'
+            style={{
+                backgroundImage: `url(./${middle}-middle.jpg)`,
+                width: 200,
+                height: 200,
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat',
+            }}
+            ></article>
+
+            <article 
+            className='pants'
+            style={{
+                backgroundImage: `url(./${pants}-pants.jpg)`,
+                width: 200,
+                height: 200,
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat',
+            }}
+            ></article>
         </section>
     )
 }

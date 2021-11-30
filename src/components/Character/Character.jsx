@@ -1,9 +1,18 @@
 import React from 'react'
 
-export const Character = () => {
+export const Character = ({head, middle, pants}) => {
     return (
-        <div>
-            
-        </div>
+        <section style={{display: 'flex', flexDirection: 'column'}}>
+            <article 
+            className='head'
+            style={{
+                backgroundImage: `url(./${head}-head.jpg)`,
+                width: 200,
+                height: 200,
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat',
+            }}
+            ></article>
+        </section>
     )
 }

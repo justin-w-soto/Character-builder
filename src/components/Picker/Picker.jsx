@@ -26,6 +26,20 @@ export const Picker = ({
                     <option key={pic}>{pic}</option>
                 ))}</select>
             </label>
+
+            <label>
+                Middle
+                <select value={middle} onChange={(e) => onMiddleChange(e.target.value)}>{middlePics.map((pic)=>(
+                    <option key={pic}>{pic}</option>
+                ))}</select>
+            </label>
+
+            <label>
+                Pants
+                <select value={pants} onChange={(e) => onPantsChange(e.target.value)}>{pantsPics.map((pic)=>(
+                    <option key={pic}>{pic}</option>
+                ))}</select>
+            </label>
         </div>
     )
 }

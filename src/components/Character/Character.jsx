@@ -6,20 +6,22 @@ export default function Character({head, middle, pants}) {
             <article 
             className='head'
             style={{
-                backgroundImage: `url(./${head}-head.jpg)`,
-                width: 200,
-                height: 200,
-                backgroundSize: 'cover',
-                backgroundRepeat: 'no-repeat',
+               background: 'beige',
+               border:'tomato solid 2px',
+               wiidth: '200px',
+               height: '200px',
+               backgroundSize: 'cover',
+               backgroundRepeat: 'no-repeat',
             }}
             ></article>
 
             <article 
             className='middle'
             style={{
-                backgroundImage: `url(./${middle}-middle.jpg)`,
-                width: 200,
-                height: 200,
+                background: 'tan',
+                border:'tomato solid 2px',
+                wiidth: '200px',
+                height: '200px',
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
             }}
@@ -28,9 +30,10 @@ export default function Character({head, middle, pants}) {
             <article 
             className='pants'
             style={{
-                backgroundImage: `url(./${pants}-pants.jpg)`,
-                width: 200,
-                height: 200,
+                background: 'brown',
+                border:'tomato solid 2px',
+                wiidth: '200px',
+                height: '200px',
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
             }}

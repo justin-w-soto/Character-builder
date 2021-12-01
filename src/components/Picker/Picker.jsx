@@ -1,6 +1,12 @@
 import React, { useState } from 'react'
 
 export default function Picker({  
+    // head,
+    onHeadChange,
+    // middle,
+    onMiddleChange,
+    // pants,
+    onPantsChange,
     newCatchphrase,
     setCatchphrase,
     handleClick,
@@ -19,21 +25,21 @@ export default function Picker({
         <div>
             <label>
                 Head
-                <select value={head} onChange={(e) => setHead(e.target.value)}>{headPics.map((pic)=>(
+                <select value={head} onChange={(e) => onHeadChange(e.target.value)}>{headPics.map((pic)=>(
                     <option key={pic}>{pic}</option>
                 ))}</select>
             </label>
 
             <label>
                 Middle
-                <select value={middle} onChange={(e) => setMiddle(e.target.value)}>{middlePics.map((pic)=>(
+                <select value={middle} onChange={(e) => onMiddleChange(e.target.value)}>{middlePics.map((pic)=>(
                     <option key={pic}>{pic}</option>
                 ))}</select>
             </label>
 
             <label>
                 Pants
-                <select value={pants} onChange={(e) => setPants(e.target.value)}>{pantsPics.map((pic)=>(
+                <select value={pants} onChange={(e) => onPantsChange(e.target.value)}>{pantsPics.map((pic)=>(
                     <option key={pic}>{pic}</option>
                 ))}</select>
             </label>

@@ -21,9 +21,6 @@ function App() {
       <header className="App-header">
         <h1>Character Building Macho Machine</h1>
       
-
-      <Display catchphrases={catchphrases} />
-
       <Picker 
       head={head} 
       onHeadChange={setHead} 
@@ -34,6 +31,8 @@ function App() {
       newCatchphrase={newCatchphrase} 
       setCatchphrase={setNewCatchphrase} 
       handleClick={handleClick} />
+
+      <Display catchphrases={catchphrases} />
 
       <Character 
       head={head} 

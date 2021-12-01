@@ -7,21 +7,21 @@ export default function Character({head, middle, pants}) {
             className='head'
             style={{
             
-               background: 'beige',
-               border:'brown solid 2px',
-               borderRadius:'2rem',
-               wiidth: '200px',
-               height: '200px',
-               backgroundSize: 'cover',
-               backgroundRepeat: 'no-repeat',
-               margin: '2rem',
+                backgroundImage: `url(./${head}-head.jpg)`,
+                border:'brown solid 2px',
+                borderRadius:'2rem',
+                wiidth: '200px',
+                height: '200px',
+                backgroundSize: 'cover',
+                backgroundRepeat: 'no-repeat',
+                margin: '2rem',
             }}
             >Head</article>
 
             <article 
             className='middle'
             style={{
-                background: 'tan',
+                backgroundImage: `url(./${middle}-middle.jpg)`,
                 border:'brown solid 2px',
                 borderRadius:'2rem',
                 wiidth: '200px',
@@ -35,7 +35,7 @@ export default function Character({head, middle, pants}) {
             <article 
             className='pants'
             style={{
-                background: ' rgb(85, 57, 57)',
+                backgroundImage: `url(./${pants}-pants.jpg)`,
                 border:'brown solid 2px',
                 borderRadius:'2rem',
                 wiidth: '200px',

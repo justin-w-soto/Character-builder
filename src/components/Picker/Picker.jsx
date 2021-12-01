@@ -40,6 +40,20 @@ export const Picker = ({
                     <option key={pic}>{pic}</option>
                 ))}</select>
             </label>
+            
+            <label>
+                New Catchphrase:
+                <input
+                type='text'
+                value={newCatchphrase}
+                onChange={(e) => setCatchphrase(e.target.value)}
+                />
+            </label>
+
+            <button type='button' onClick={handleClick}>
+                Submit
+            </button>
+
         </div>
     )
 }

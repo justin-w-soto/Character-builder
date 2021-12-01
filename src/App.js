@@ -1,8 +1,8 @@
 import './App.css';
 import { useState } from 'react';
-import { Character } from './components/Character/Character';
-import { Display } from './components/Display/Display';
-import { Picker } from './components/Picker/Picker';
+import Character from './components/Character/Character';
+import Display from './components/Display/Display';
+import Picker from './components/Picker/Picker';
 
 function App() {
   const {head, setHead} = useState('');
@@ -17,27 +17,31 @@ function App() {
 
   return (
     <div className="App">
+      <main>
       <header className="App-header">
         <h1>Character Building Macho Machine</h1>
-      </header>
       
-      <Character 
-      head={head} 
-      middle={middle} 
-      pants={pants}/>
 
-      <Display />
-      
+      <Display catchphrases={catchphrases} />
+
       <Picker 
       head={head} 
       onHeadChange={setHead} 
       middle={middle} 
       onMiddleChange={setMiddle} 
+      pants={pants}
+      onPantsChange={setPants}
       newCatchphrase={newCatchphrase} 
       setCatchphrase={setNewCatchphrase} 
       handleClick={handleClick} />
 
+      <Character 
+      head={head} 
+      middle={middle} 
+      pants={pants}/>
         
+      </header>
+      </main>
     </div>
   );
 }

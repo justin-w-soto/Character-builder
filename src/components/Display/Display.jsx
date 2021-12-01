@@ -1,9 +1,10 @@
 import React from 'react'
 
-export const Display = () => {
+export default function Display () {
+    
     return (
         <div>
             
         </div>
-    )
+    );
 }

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export const Character = ({head, middle, pants}) => {
+export default function Character({head, middle, pants}) {
     return (
         <section style={{display: 'flex', flexDirection: 'column'}}>
             <article 

@@ -6,38 +6,45 @@ export default function Character({head, middle, pants}) {
             <article 
             className='head'
             style={{
+            
                background: 'beige',
-               border:'tomato solid 2px',
+               border:'brown solid 2px',
+               borderRadius:'2rem',
                wiidth: '200px',
                height: '200px',
                backgroundSize: 'cover',
                backgroundRepeat: 'no-repeat',
+               margin: '2rem',
             }}
-            ></article>
+            >Head</article>
 
             <article 
             className='middle'
             style={{
                 background: 'tan',
-                border:'tomato solid 2px',
+                border:'brown solid 2px',
+                borderRadius:'2rem',
                 wiidth: '200px',
                 height: '200px',
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
+                margin: '2rem',
             }}
-            ></article>
+            >middle</article>
 
             <article 
             className='pants'
             style={{
-                background: 'brown',
-                border:'tomato solid 2px',
+                background: ' rgb(85, 57, 57)',
+                border:'brown solid 2px',
+                borderRadius:'2rem',
                 wiidth: '200px',
                 height: '200px',
                 backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
+                margin: '2rem',
             }}
-            ></article>
+            >pants</article>
         </section>
     )
 }

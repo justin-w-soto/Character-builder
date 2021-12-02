@@ -5,14 +5,14 @@ import Display from './components/Display/Display';
 import Picker from './components/Picker/Picker';
 
 function App() {
-  const {head, setHead} = useState('');
-  const {middle, setMiddle} = useState('');
-  const {pants, setPants} = useState('');
-  const {newCatchphrase, setNewCatchphrase} = useState('');
-  const {catchphrases, setCatchphrases} = useState([]);
+  const [head, setHead] = useState('alien');
+  const [middle, setMiddle] = useState('cool');
+  const [pants, setPants] = useState('bread');
+  const [newCatchphrase, setNewCatchphrase] = useState('');
+  const [catchphrases, setCatchphrases] = useState([]);
 
   const handleClick = () => {
-    setCatchphrases((prevState) => [...prevState, newCatchphrase])
+    setCatchphrases((prevState) => [...prevState, newCatchphrase]);
   };
 
   return (

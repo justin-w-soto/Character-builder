@@ -9,13 +9,14 @@ export default function Character({head, middle, pants}) {
             style={{
             
                 backgroundImage: `url(./${head}-head.jpg)`,
-                border:'brown solid 2px',
-                borderRadius:'2rem',
-                wiidth: '200px',
-                height: '200px',
-                backgroundSize: 'cover',
+            
+                display: 'flex',
+                flexDirection: 'row',
+                justifyContent: 'center',
+                wiidth: '6em',
+                height: '22em',
                 backgroundRepeat: 'no-repeat',
-                margin: '2rem',
+                
             }}
             >Head</article>
 
@@ -24,13 +25,13 @@ export default function Character({head, middle, pants}) {
             className='middle'
             style={{
                 backgroundImage: `url(./${middle}-middle.jpg)`,
-                border:'brown solid 2px',
-                borderRadius:'2rem',
-                wiidth: '200px',
-                height: '200px',
-                backgroundSize: 'cover',
+            
+                display: 'flex',
+                flexDirection: 'row',
+                wiidth: '6em',
+                height: '22em',
                 backgroundRepeat: 'no-repeat',
-                margin: '2rem',
+                
             }}
             >middle</article>
 
@@ -39,13 +40,13 @@ export default function Character({head, middle, pants}) {
             className='pants'
             style={{
                 backgroundImage: `url(./${pants}-pants.jpg)`,
-                border:'brown solid 2px',
-                borderRadius:'2rem',
-                wiidth: '200px',
-                height: '200px',
-                backgroundSize: 'cover',
+                display: 'flex',
+                flexDirection: 'row',
+                wiidth: '6em',
+                height: '22em',
+                
                 backgroundRepeat: 'no-repeat',
-                margin: '2rem',
+               
             }}
             >pants</article>
         </section>

@@ -4,6 +4,7 @@ export default function Character({head, middle, pants}) {
     return (
         <section style={{display: 'flex', flexDirection: 'column'}}>
             <article 
+            aria-label='Head'
             className='head'
             style={{
             
@@ -19,6 +20,7 @@ export default function Character({head, middle, pants}) {
             >Head</article>
 
             <article 
+            aria-label='Middle'
             className='middle'
             style={{
                 backgroundImage: `url(./${middle}-middle.jpg)`,
@@ -33,6 +35,7 @@ export default function Character({head, middle, pants}) {
             >middle</article>
 
             <article 
+            aria-label='Pants'
             className='pants'
             style={{
                 backgroundImage: `url(./${pants}-pants.jpg)`,

@@ -1,0 +1,60 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`should do the thing 1`] = `
+<div>
+  <label>
+    Head
+    <select>
+      <option>
+        alien
+      </option>
+      <option>
+        fish
+      </option>
+      <option>
+        hooman
+      </option>
+    </select>
+  </label>
+  <label>
+    Middle
+    <select>
+      <option>
+        cool
+      </option>
+      <option>
+        fancy
+      </option>
+      <option>
+        hooman
+      </option>
+    </select>
+  </label>
+  <label>
+    Pants
+    <select>
+      <option>
+        bread
+      </option>
+      <option>
+        dawg
+      </option>
+      <option>
+        mane
+      </option>
+    </select>
+  </label>
+  <label>
+    New Catchphrase:
+    <input
+      type="text"
+      value=""
+    />
+  </label>
+  <button
+    type="button"
+  >
+    Submit
+  </button>
+</div>
+`;

@@ -3,7 +3,7 @@ import { render, screen } from '@testing-library/react';
 import Display from './Display';
 
 it('Displays a catchphrase', () => {
-    render(
+    const { container } = render(
         <Display catchphrases={['hello', 'dude']} />
     )
     

@@ -3,26 +3,26 @@
 exports[`should display the Character component 1`] = `
 <div>
   <section
-    style="display: flex; flex-direction: column;"
+    style="display: flex; flex-direction: column; width: 300px; height: 100vh; text-align: center; align-content: center; margin-left: auto; margin-right: auto;"
   >
     <article
       aria-label="Head"
       class="head"
-      style="background-image: url(./alien-head.jpg); border: 2px solid brown; border-radius: 2rem; height: 200px; background-size: cover; background-repeat: no-repeat; margin: 2rem;"
+      style="background-image: url(./alien-head.jpg); width: 200px; height: 200px; background-size: cover; background-repeat: no-repeat;"
     >
       Head
     </article>
     <article
       aria-label="Middle"
       class="middle"
-      style="background-image: url(./cool-middle.jpg); border: 2px solid brown; border-radius: 2rem; height: 200px; background-size: cover; background-repeat: no-repeat; margin: 2rem;"
+      style="background-image: url(./cool-middle.jpg); width: 200px; height: 200px; background-size: cover; background-repeat: no-repeat;"
     >
       middle
     </article>
     <article
       aria-label="Pants"
       class="pants"
-      style="background-image: url(./bread-pants.jpg); border: 2px solid brown; border-radius: 2rem; height: 200px; background-size: cover; background-repeat: no-repeat; margin: 2rem;"
+      style="background-image: url(./bread-pants.jpg); display: flex; flex-direction: column; width: 200px; height: 200px; background-size: cover; background-repeat: no-repeat;"
     >
       pants
     </article>

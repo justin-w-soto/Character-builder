@@ -2,7 +2,7 @@ import { render, screen } from '@testing-library/react';
 import Character from './Character';;
 
 it('should display the Character component', () => {
-    const {container} = render(<Character head='dog' middle='fancy' />);
+    const {container} = render(<Character head='alien' middle='cool' pants='bread' />);
   
     const head = screen.getByLabelText(/Head/);
     const middle = screen.getByLabelText(/Middle/);

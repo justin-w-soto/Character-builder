@@ -2,21 +2,27 @@ import React from 'react'
 
 export default function Character({head, middle, pants}) {
     return (
-        <section style={{display: 'flex', flexDirection: 'column'}}>
+        <section 
+        style={{
+            display: 'flex', 
+            flexDirection: 'column', 
+            width: '300px', 
+            height: '100vh', 
+            textAlign: 'center', 
+            alignContent: 'center',
+            marginLeft: 'auto', 
+            marginRight: 'auto'
+           }}>
             <article 
             aria-label='Head'
             className='head'
             style={{
             
                 backgroundImage: `url(./${head}-head.jpg)`,
-            
-                display: 'flex',
-                flexDirection: 'row',
-                justifyContent: 'center',
-                wiidth: '6em',
-                height: '22em',
+                width: '200px',
+                height: '200px',
+                backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
-                
             }}
             >Head</article>
 
@@ -25,13 +31,10 @@ export default function Character({head, middle, pants}) {
             className='middle'
             style={{
                 backgroundImage: `url(./${middle}-middle.jpg)`,
-            
-                display: 'flex',
-                flexDirection: 'row',
-                wiidth: '6em',
-                height: '22em',
+                width: '200px',
+                height: '200px',
+                backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
-                
             }}
             >middle</article>
 
@@ -41,12 +44,11 @@ export default function Character({head, middle, pants}) {
             style={{
                 backgroundImage: `url(./${pants}-pants.jpg)`,
                 display: 'flex',
-                flexDirection: 'row',
-                wiidth: '6em',
-                height: '22em',
-                
+                flexDirection: 'column',
+                width: '200px',
+                height: '200px',
+                backgroundSize: 'cover',
                 backgroundRepeat: 'no-repeat',
-               
             }}
             >pants</article>
         </section>

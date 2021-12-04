@@ -18,7 +18,7 @@ export default function Character({head, middle, pants}) {
             className='head'
             style={{
             
-                backgroundImage: `url(./${head}-head.jpg)`,
+                backgroundImage: `url(./${head}-head.png)`,
                 width: '200px',
                 height: '200px',
                 backgroundSize: 'cover',
@@ -30,7 +30,7 @@ export default function Character({head, middle, pants}) {
             aria-label='Middle'
             className='middle'
             style={{
-                backgroundImage: `url(./${middle}-middle.jpg)`,
+                backgroundImage: `url(./${middle}-middle.png)`,
                 width: '200px',
                 height: '200px',
                 backgroundSize: 'cover',
@@ -42,7 +42,7 @@ export default function Character({head, middle, pants}) {
             aria-label='Pants'
             className='pants'
             style={{
-                backgroundImage: `url(./${pants}-pants.jpg)`,
+                backgroundImage: `url(./${pants}-pants.png)`,
                 display: 'flex',
                 flexDirection: 'column',
                 width: '200px',

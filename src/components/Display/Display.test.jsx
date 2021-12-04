@@ -6,5 +6,5 @@ it('Displays a catchphrase', () => {
     const { container } = render(
         <Display catchphrases={['hello', 'dude']} />
     )
-    
+    expect(container).toMatchSnapshot();
 })

@@ -10,6 +10,7 @@ export default function Display ({ catchphrases }) {
             key={catchphrase}>{catchphrase}
             </p>
             )}
+            <br></br>
         </>
     );
 }

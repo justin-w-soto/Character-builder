@@ -19,7 +19,7 @@ function App() {
     <div className="App">
       <main>
       <header className="App-header">
-        <h1>Character Building Macho Machine</h1>
+        <h1>Character Builderer</h1>
       
       <Picker 
       head={head} 
@@ -33,6 +33,7 @@ function App() {
       handleClick={handleClick} />
 
       <Display catchphrases={catchphrases} />
+ 
 
       <Character 
       head={head} 

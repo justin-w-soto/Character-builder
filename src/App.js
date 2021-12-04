@@ -1,23 +1,47 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
+import Character from './components/Character/Character';
+import Display from './components/Display/Display';
+import Picker from './components/Picker/Picker';
 
 function App() {
+  const [head, setHead] = useState('alien');
+  const [middle, setMiddle] = useState('cool');
+  const [pants, setPants] = useState('bread');
+  const [newCatchphrase, setNewCatchphrase] = useState('');
+  const [catchphrases, setCatchphrases] = useState([]);
+
+  const handleClick = () => {
+    setCatchphrases((prevState) => [...prevState, newCatchphrase]);
+  };
+
   return (
     <div className="App">
+      <main>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <h1>Character Builderer</h1>
+      
+      <Picker 
+      head={head} 
+      onHeadChange={setHead} 
+      middle={middle} 
+      onMiddleChange={setMiddle} 
+      pants={pants}
+      onPantsChange={setPants}
+      newCatchphrase={newCatchphrase} 
+      setCatchphrase={setNewCatchphrase} 
+      handleClick={handleClick} />
+
+      <Display catchphrases={catchphrases} />
+ 
+
+      <Character 
+      head={head} 
+      middle={middle} 
+      pants={pants}/>
+        
       </header>
+      </main>
     </div>
   );
 }
